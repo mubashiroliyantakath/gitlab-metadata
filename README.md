@@ -114,7 +114,7 @@ The following job definition could be used to propagate VERSION and TAGS variabl
 ```yaml
 generate-metadata:
   stage: metadata
-  image: mubashiroliyantakath/gitlab-metadata:0.1.2
+  image: mubashiro/gitlab-metadata:0.1.2
   script:
     - /app/gitlab-metadata
   artifacts:

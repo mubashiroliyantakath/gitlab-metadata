@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN env CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o gitlab-metadata
+RUN env CGO_ENABLED=0 GOOS=linux go build -o gitlab-metadata
 
 FROM alpine
 
